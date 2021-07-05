@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Skylab Calculator</title>
+</head>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th id="screen" scope="col" colspan="4">0</th>
+                </tr>
+            </thead>
+            <tr>
+                <td td colspan="2"> <button id="ac"class="allClear" onclick="allClear()">AC</button> </td>
+                <td> <button id="change" class="changeSign" onclick="del()">Del</button> </td>
+                <td> <button id="division" class="operations" onclick="divide()">/</button> </td>
+            </tr>
+            <tr>
+                <td> <button id="seven" class="number" onclick="numbers(7)">7</button> </td> 
+                <td> <button id="eight" class="number" onclick="numbers(8)">8</button> </td>
+                <td> <button id="nine" class="number" onclick="numbers(9)">9</button> </td>
+                <td> <button id="multiplication" class="operations" onclick="multiply()">x</button> </td> 
+            </tr>
+            <tr>
+                <td> <button id="four" class="number" onclick="numbers(4)">4</button> </td>
+                <td> <button id="five" class="number" onclick="numbers(5)">5</button> </td>
+                <td> <button id="six" class="number" onclick="numbers(6)">6</button> </td>
+                <td> <button id="rest" class="operations" onclick="subtract()">-</button> </td>
+            </tr>
+            <tr>
+                <td> <button id="one" class="number" onclick="numbers(1)">1</button> </td>
+                <td> <button id="two" class="number" onclick="numbers(2)">2</button> </td>
+                <td> <button id="three" class="number" onclick="numbers(3)">3</button> </td>
+                <td> <button id="plus" class="operations" onclick="sum()">+</button> </td>       
+            </tr>
+            <tr>
+                <td> <button id="zero" class="number" onclick="numbers(0)">0</button> </td>
+                <td> <button id="point" class="coma" onclick="addComa()">.</button> </td>
+                <td colspan="2"> <button id="results" class="result" onclick="equalTo()">=</button> </td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
