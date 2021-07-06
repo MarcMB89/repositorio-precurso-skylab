@@ -2,7 +2,8 @@
 function SkylabAirlines(){
 
     let userID = prompt("¿Cúal es tu nombre de usuario?");
-    userID.toString();
+    userID = userID.toString();
+
     console.log("Bienvenid@ a Skylab Airlines " + userID);
 
     let flights = [
