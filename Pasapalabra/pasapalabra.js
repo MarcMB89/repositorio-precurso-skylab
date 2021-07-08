@@ -1,5 +1,5 @@
-//sonaqube  
-sonar.projectKey=pasapalabra
+//sonaqube  sonar-scanner.bat -D"sonar.projectKey=pasapalabra-v2" -D"sonar.sources=." -D"sonar.host.url=http://localhost:9000" -D"sonar.login=4b7166a43f4a94422f141d22e3cc62c043f5f870"
+
 
 // primer set de preguntas
 let questions1 = [
@@ -201,8 +201,8 @@ let ranking = [
 // función que genera un número aleatorio para que las puntuaciones de los jugadores NPC varien en cada partida
 function randomNumber() {
 
-    max = 27;
-    min = 0;
+    let max = 27;
+    let min = 0;
     return  Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
@@ -279,7 +279,7 @@ function roscoLogic() {
 
             if (gameQuestions[i].status === 0 && endTheGame === false) {
 
-                let answer = prompt(gameQuestions[i].question);
+                answer = prompt(gameQuestions[i].question);
 
                 if (answer !== null)
 
@@ -371,7 +371,7 @@ function endScore() {
 }
 
 // función que ordena a los jugadores del ranking por por orden de puntuación
-function finalRanking(ranking) {
+function finalRanking() {
 
     let rankingPosition = ranking.sort((a,b) => b.points - a.points);
     console.log("Este es el ranking con los 10 mejores jugadores:");
@@ -439,11 +439,18 @@ function pasapalabra() {
     roscoLogic();
     roscoLoop();
     player.points = endScore();
-    finalRanking(ranking);
+    finalRanking();
     playAgain();
 }
 
 pasapalabra();
+
+
+
+
+
+
+
 
 
 

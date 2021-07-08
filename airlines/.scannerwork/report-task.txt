@@ -1,0 +1,6 @@
+projectKey=airlines-v2
+serverUrl=http://localhost:9000
+serverVersion=8.9.1.44547
+dashboardUrl=http://localhost:9000/dashboard?id=airlines-v2
+ceTaskId=AXp9fteMbz10UJW3w4Ad
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXp9fteMbz10UJW3w4Ad
